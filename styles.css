@@ -85,11 +85,16 @@ main #main-title{
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  transition: .5s ease;
+  transform: scale(1);
   /* transition: opacity 0.25s ease-in-out; */
 }
 
 .gallery-img:hover {
+  transition: .5s ease;
   transform: scale(1.1);
+  cursor: pointer;
+
 }
 
 /* Tablet style change */
