@@ -148,9 +148,10 @@ main #main-title{
     padding: 0;
   }
 }
+/* 
+Footer styles  */
 
-
-#footer {
+body #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
