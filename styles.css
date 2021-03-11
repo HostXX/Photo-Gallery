@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(192, 192, 192);
+}
+
+body main {
+  padding: 1rem;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: rgb(28, 60, 90);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid rgb(80, 80, 80);
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transform: scale(1);
+  transition: 0.4s ease-in-out;
+}
+
+.nav a:hover {
+  background-color: #b0e0a6;
+  color: rgb(0, 0, 0);
+  transform: scale(0.8);
+  transition: 0.4s ease-in-out;
+  border-radius: 80%;
+}
+
+/* active class to control the menu item style when we are in the page assigned to it */
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+/* main tittle  */
+
+main #main-title{
+    text-align: center;
+    font-size: 48px;
+    padding-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* gallery styles  */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* The Picture Frame */
+.gallery-frame {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.61);
+  color: #d9d9d9;
+}
+
+/* The Images */
+.gallery-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* transition: opacity 0.25s ease-in-out; */
+}
+
+.gallery-img:hover {
+  transform: scale(1.1);
+}
+
+/* Tablet style change */
+
+@media screen and (min-width: 768px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Desktop style change */
+
+@media screen and (min-width: 1024px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
