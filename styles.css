@@ -152,9 +152,16 @@ main #main-title{
 Footer styles  */
 
 body #footer {
+  display: flex;
+  flex-direction: column;
   position: relative;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;            /* Footer height */
+  height: 3.5rem;            /* Footer height */
   background-color: #b0e0a6;
+  justify-content: center;
+}
+
+body #footer .icon-footer{
+  align-self: center;
 }
