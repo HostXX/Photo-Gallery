@@ -6,10 +6,24 @@
 
 body {
   background: #ffffff;
+  
 }
+
+body header #contact-banner{
+  background-color: #28293c;
+  height: 4.5rem;
+  color: #fff;
+  text-align: right;
+}
+
+body header #contact-banner h2{
+ padding: 1rem;
+}
+
 
 body main {
   padding: 5rem;
+  
 }
 
 body header .nav {
@@ -61,7 +75,7 @@ body header .nav {
 
 body header #main-title {
   text-align: left;
-  font-size: 48px;
+  font-size: 4.5rem;
   font-family: "Roboto", sans-serif;
   padding: 3rem 3rem 3rem 6rem;
 }
@@ -80,6 +94,7 @@ body header #main-title {
 .gallery-grid .gallery-frame .gallery-frame-info {
   display: flex;
   flex-direction: column;
+  height:172px;
 }
 
 .gallery-grid .gallery-frame .gallery-frame-info sup {
@@ -110,7 +125,7 @@ body header #main-title {
 /* The Images */
 .gallery-img {
   max-width: 100%;
-  height: auto;
+  height: 382px;
   object-fit: cover;
   transition: 0.5s ease;
   /* transition: opacity 0.25s ease-in-out; */
@@ -150,7 +165,7 @@ body header #main-title {
 
 /* Desktop style change */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width:1366px) {
   .nav li {
     width: 120px;
     border-bottom: none;
@@ -166,34 +181,21 @@ body header #main-title {
 
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
     justify-items: center;
     margin: 0;
     padding: 0;
   }
 }
-/* 
-Footer styles  */
 
-body #footer {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 20rem; /* Footer height */
-  background-color: #28293d;
-  justify-content: center;
-  padding-left: 6rem;
-}
 
 /* banner image */
 
 #banner-img {
   position: relative;
   width: 100vw;
-  height: 560px;
+  height: 48rem;
 }
 
 #banner-img #logo-title {
@@ -210,26 +212,63 @@ body #footer {
   object-fit: cover;
 }
 
+/* Footer styles  */
+
+body #footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50rem; /* Footer height */
+  background-color: #28293d;
+  justify-content: center;
+}
+
+#sub-footer{
+  background-color: #ffffff;
+  height: 25.6rem;
+}
+
+
 .contact-wrapper {
-  width: 40%;
+  width: 100%;
   color: #ffffff;
   margin-top: 1rem;
 }
 
+.contact-wrapper #contact-title ,#contact-sub-title{
+  color:#ffffff;
+}
+
+.contact-wrapper #contact-title{
+  width: 32ch;
+  margin-left: 4rem;
+}
+
+.contact-wrapper #contact-sub-title{
+  width: 64ch;
+  margin-left: 4rem;
+}
+
+
 .contact-wrapper #contact-form {
   display: flex;
   flex-direction: row;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
 }
 
 #contact-form #comment-wrapper {
-  margin: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 
 #contact-form #comment-wrapper #submit-comment {
   width: 7rem;
-  margin: 1rem 0 0 0;
+  margin: 2.5rem 0 0 0;
   align-self: flex-end;
   font-size: 1rem;
   padding: 0.5rem;
@@ -241,12 +280,31 @@ body #footer {
 #field-contact-group {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 #field-contact-group input {
   max-width: 400px;
-  margin: 1rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
 }
+
+#social-container{
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+#social-container h1{
+  text-align: center;
+}
+
+#social-container #span-line-container hr{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+
 
 /* to hide scrollbar in firefox  */
 
