@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 body {
@@ -22,12 +23,12 @@ body header #contact-banner h2{
 
 
 body main {
-  padding: 5rem;
+  padding: 3rem;
   
 }
 
 body header .nav {
-  padding: 0 0 0 4.5rem;
+  padding: 0 0 0 3rem;
 }
 
 .nav ul {
@@ -40,9 +41,9 @@ body header .nav {
 .nav li {
   display: inline;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
+  height: 5px;
+  font-size: 1.5rem;
+  line-height: 1rem;
   border-bottom: 1px solid #ffffff;
   margin: 0 0 0 0;
   padding-left: 2rem;
@@ -57,10 +58,13 @@ body header .nav {
 }
 
 .nav a:hover {
-  background-color: #b0e0a6;
+  background-color: #518caa7c;
   color: rgb(0, 0, 0);
   transform: scale(0.8);
   transition: 0.4s ease-in-out;
+  border-radius: 5px;
+  padding: 5px;
+  
 }
 
 /* active class to control the menu item style when we are in the page assigned to it */
@@ -75,9 +79,9 @@ body header .nav {
 
 body header #main-title {
   text-align: left;
-  font-size: 4.5rem;
+  font-size: 3.25rem;
   font-family: "Roboto", sans-serif;
-  padding: 3rem 3rem 3rem 6rem;
+  padding: 3rem;
 }
 
 /* gallery styles  */
@@ -110,6 +114,16 @@ body header #main-title {
   background-color: #ffffff00;
   border: solid white;
   color: white;
+  cursor: pointer;
+}
+
+.gallery-grid .gallery-frame .gallery-frame-info button:hover {
+  background-color: #518caa;
+}
+
+.gallery-grid .gallery-frame .gallery-frame-info button a{
+  text-decoration: none;
+  color: #fff;
 }
 
 /* The Picture Frame */
@@ -145,7 +159,7 @@ body header #main-title {
     border-bottom: none;
     height: 50px;
     line-height: 50px;
-    font-size: 1.4em;
+    font-size: 1.5;
   }
 
   .nav li {
@@ -169,13 +183,13 @@ body header #main-title {
   .nav li {
     width: 120px;
     border-bottom: none;
-    height: 50px;
-    line-height: 50px;
+    height: 5px;
+    line-height: .5rem;
     font-size: 1.4em;
   }
 
   .nav li {
-    display: inline-block;
+    display: inline;
     margin-right: -4px;
   }
 
@@ -275,6 +289,11 @@ body #footer {
   background-color: #ffffff00;
   border: solid white;
   color: white;
+  cursor: pointer;
+}
+
+#contact-form #comment-wrapper #submit-comment:hover {
+  background-color: #518caa;
 }
 
 #field-contact-group {
