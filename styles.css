@@ -247,3 +247,15 @@ body #footer {
   max-width: 400px;
   margin: 1rem;
 }
+
+/* to hide scrollbar in firefox  */
+
+html {
+  scrollbar-width: none;
+}
+
+/* to hide scrollbar in chrome  */
+
+body::-webkit-scrollbar {
+  display: none;
+}
