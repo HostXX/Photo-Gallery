@@ -1,8 +1,12 @@
+html{
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  
 }
 
 body {
@@ -259,12 +263,12 @@ margin: 18px;;
 }
 
 .contact-wrapper #contact-title{
-  width: 32ch;
+  width: 100%;
   margin-left: 4rem;
 }
 
 .contact-wrapper #contact-sub-title{
-  width: 64ch;
+  width: 100%;
   margin-left: 4rem;
 }
 
