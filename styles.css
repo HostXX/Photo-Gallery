@@ -32,8 +32,28 @@ body header #contact-banner #logo{
 
 body main {
   padding: 3rem;
-  
+  display: flex;
+  flex-direction: column;
 }
+
+body main #show-all-button {
+  width: 9rem;
+  font-size: 1rem;
+  align-self: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border: 2px solid #28293c;
+  cursor: pointer;
+}
+
+
+body main #show-all-button:hover {
+  background-color: #28293c;
+  color: #ffffff;
+}
+
+
 
 body header .nav {
   padding: 0 0 0 3rem;
@@ -159,57 +179,6 @@ body header #main-title {
   cursor: pointer;
 }
 
-/* Tablet style change */
-
-@media screen and (min-width: 768px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.5;
-  }
-
-  .nav li {
-    display: inline;
-    margin-right: -4px;
-  }
-
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    justify-items: center;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-/* Desktop style change */
-
-@media screen and (min-width:1366px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 5px;
-    line-height: .5rem;
-    font-size: 1.4em;
-  }
-
-  .nav li {
-    display: inline;
-    margin-right: -4px;
-  }
-
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
-    justify-items: center;
-    margin: 0;
-    padding: 0;
-  }
-}
 
 
 /* banner image */
@@ -221,11 +190,24 @@ body header #main-title {
 }
 
 #banner-img #logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 0px;
+  left: 5px;
   color: white;
   font-size: 2rem;
+}
+
+#banner-img #logo-title h1{
+  color: #28293c;
+  font-size: larger;
+}
+
+#banner-img #logo-title h4{
+  color: #166f89;
+  font-size: large;
 }
 
 #banner-img img {
@@ -242,18 +224,19 @@ body #footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  height: 50rem; /* Footer height */
+  /* height: 50rem; Footer height */
   background-color: #28293d;
   justify-content: center;
 }
 
 #sub-footer{
   background-color: #ffffff;
-  height: 25.6rem;
 }
 
 #sub-footer #social-container #footer-logo{
   align-self: center;
+  margin: 2rem;
+
 }
 
 #sub-footer #social-container #media-icon-links{
@@ -342,6 +325,142 @@ margin: 18px;;
   margin-left: 4rem;
   margin-right: 4rem;
 }
+
+#social-container #powered-sub{
+ align-self: center;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: small;
+}
+
+
+
+/* Tablet style change */
+
+@media screen and (min-width: 768px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5;
+  }
+
+  .nav li {
+    display: inline;
+    margin-right: -4px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Desktop style change */
+
+@media screen and (min-width: 1024px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5;
+  }
+
+  .nav li {
+    display: inline;
+    margin-right: -4px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #banner-img #logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  #banner-img #logo-title h1{
+    color: #28293c;
+    font-size: 2.5rem;
+  }
+  
+  #banner-img #logo-title h4{
+    color: #166f89;
+    font-size: large;
+  }
+
+  
+}
+
+/* Desktop-wide style change */
+ 
+@media screen and (min-width:1366px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 5px;
+    line-height: .5rem;
+    font-size: 1.4em;
+  }
+
+  .nav li {
+    display: inline;
+    margin-right: -4px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #banner-img #logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  #banner-img #logo-title h1{
+    color: #28293c;
+    font-size: 3rem;
+  }
+  
+  #banner-img #logo-title h4{
+    color: #166f89;
+    font-size: large;
+  }
+
+
+} 
+
+
+
 
 
 
