@@ -11,15 +11,23 @@ body {
 }
 
 body header #contact-banner{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #28293c;
   height: 4.5rem;
   color: #fff;
   text-align: right;
 }
 
-body header #contact-banner h2{
+body header #contact-banner #contact-us-link{
  padding: 1rem;
+
 }
+
+body header #contact-banner #logo{
+  padding: 1rem;
+ }
 
 
 body main {
@@ -163,13 +171,13 @@ body header #main-title {
   }
 
   .nav li {
-    display: inline-block;
+    display: inline;
     margin-right: -4px;
   }
 
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     justify-items: center;
     margin: 0;
@@ -242,6 +250,18 @@ body #footer {
 #sub-footer{
   background-color: #ffffff;
   height: 25.6rem;
+}
+
+#sub-footer #social-container #footer-logo{
+  align-self: center;
+}
+
+#sub-footer #social-container #media-icon-links{
+  align-self: center;
+}
+
+#sub-footer #social-container #media-icon-links svg{
+margin: 18px;;
 }
 
 
